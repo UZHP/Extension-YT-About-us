@@ -1,0 +1,106 @@
+/* Global */
+
+:root {
+    --backC: #101010;
+    --mainC: #0073b1;
+    --mainC2: #b10000;
+    --darkC: #CCC;
+    --whiteC: #FFF;
+    --blackC: #000;
+    --borderC: rgba(255, 255, 255, 0.1);
+    --mainShadowC: rgba(0, 0, 0, 0.25);
+    --shadowC: rgba(0, 0, 0, 0.5);
+    --firstC: #111;
+    --secondC: #222;
+    --thirdC: #333;
+    --fourthC: #444;
+    --fifthC: #555;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* For Time Only
+body {
+    overflow: hidden;
+} */
+
+body {
+    cursor: url(https://i.postimg.cc/W3sMYzZ9/5.png), default !important;
+}
+
+a {
+    cursor: url(https://i.postimg.cc/4dTKNxQz/1p.png), pointer !important;
+    /* cursor: url(https://i.postimg.cc/Kj53Wkw9/2p.png), pointer !important; */
+}
+
+p::selection,
+span::selection,
+a::selection,
+sup::selection,
+ul::selection {
+    background-color: transparent;
+    color: var(--mainC);
+}
+
+.mainCenter::selection,
+.twoCenter::selection,
+.textEndLinks::selection,
+.pageSectionText::selection,
+.headText::selection {
+    color: var(--darkC);
+}
+
+img::selection {
+    background-color: transparent;
+}
+
+body {
+    color: var(--whiteC);
+    background-color: var(--backC);
+    /* background-image: url("../Image/bootstrap.jpg"); */
+    font-family: 'Shadows Into Light', "ink free", sans-serif, cursive;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--secondC);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border: 2.5px solid var(--secondC);
+    border-radius: 5px;
+    background-color: var(--fourthC);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fifthC);
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 500px;
+    margin: 10px auto;
+    border-color: var(--borderC);
+}
+
+input {
+    all: unset;
+}
